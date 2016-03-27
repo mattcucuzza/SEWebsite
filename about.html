@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang ="em"> 
+<head>
+	<meta charset"utf-8">
+	<title>Software Engineering</title>
+	<link rel="icon" type="image/png" href="images/QU.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	<style>
+  		.navbar {
+  			background-color: #00004C;
+  			font-size: 12px !important;
+  			margin-bottom: 0;
+  		}
+
+  		.navbar li a { 
+  			color: white !important;
+  		}
+
+  		.navbar li a:hover { 
+  			color: #E5C100 !important;
+  		}
+
+  		.activeLink {
+  			color: #E5C100 !important;
+  			text-decoration: underline;
+  		}
+
+  		.jumbotron { 
+  			background-color: #404040;
+  			color: white !important;
+  		}
+
+      #myCarousel {
+        height: 100%;
+        width: 360px;
+      }
+
+  		.carousel-control.right, .carousel-control.left {
+  		    background-image: none;
+  		    color: #ffffff;
+  		}
+
+  		.carousel-indicators li {
+  		    border-color: #ffffff;
+  		}
+
+  		.carousel-indicators li.active {
+  		    background-color: #ffffff;
+  		}
+
+      .btn {
+        background-color: #00004C;
+        color: #E5C100 !important;
+      }
+
+      .btn:hover {
+        background-color: #E5C100;
+        color: #00004C !important;
+      }
+
+		.panel-default > .panel-heading {
+			background-color: #00004C;
+			color: #E5C100;
+		}
+
+    .tabContent {
+      font-size: 12px;
+    }
+
+    .tableContent {
+      font-size: 10px;
+    }
+
+    table {
+      border: 1px solid #909090;
+    }
+
+  		@media screen and (max-width: 768px) {
+				.col-sm-4 {
+				text-align: center;
+				margin: 25px 0;
+				}
+			}
+  	</style>
+    <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+          backgroundColor: null,
+          theme: "theme1",//theme1
+          animationEnabled: true,   // change to true
+          animationDuration: 5000,
+          interactivityEnabled: true,
+          axisX:{
+            title: "Academic Year",
+            titleFontColor: "black",
+            labelFontColor: "black"
+          },
+          axisY:{
+            title: "Number of Students",
+            titleFontColor: "black",
+            labelFontColor:"black"
+          },
+          data: [{
+          // Change type to "bar", "area", "spline", "pie",etc.
+            type: "column",
+            color: "#E5C100",
+            dataPoints: [
+              {label: "2012-13",  y: 4},
+              {label: "2013-14",  y: 16},
+              {label: "2014-15",  y: 23},
+              {label: "2015-16", y: 25},
+            ]
+          }]
+        });
+        chart.render();
+      } /*end chart */
+    </script>
+</head> 
+<body>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" target="#myNavbar">
+					<span class="icon-bar"></span>
+       				<span class="icon-bar"></span>
+        			<span class="icon-bar"></span> 
+        		</button>
+        	</div>
+        	<div class="collapse navbar-collapse" id="myNavbar">
+        		<ul class ="nav navbar-nav navbar-right">
+        			<li><a href="about.html"><b class ="activeLink">About</b></span></a></li>
+        			<li><a href="faculty.html">Faculty</a></li>
+        			<li><a href="projects.html">Projects</a></li>
+        			<li><a href="studentLife.html">Student Life</a></li>
+        			<li><a href="faq.html">FAQs</a></li>
+        		</ul>
+        	</div>
+        </div>
+    </nav>
+    <div id ="about" class="jumbotron text-center">
+    	<h1>Software Engineering</h1>
+    	<h3>About the Program</h3>
+    </div>
+    <div class="container-fluid">
+    	<div class="col-sm-6">
+    		<h1>BS in Software Engineering</h1>
+    		<p>Software engineers apply principles and techniques from computer science, engineering and mathematical analysis to specify, design, implement, evaluate, and maintain software systems. The bachelor of science in software engineering prepares students for a wide range of careers in the computing fields, as well as related positions in other domains, such as healthcare, finance, and communications.</p>
+    		<p>Programming skills are only one of the many components of a successful graduate of the Quinnipiac software engineering program. Students also acquire requirement specification, design, quality assurance and project management skills. Problem solving in teams through effective use of oral and written communication is also emphasized in the program. Students specify, design, and implement non-trivial software systems and complete a two-semester capstone project. Each student is required to obtain professional experience (e.g., through an internship or a research project) prior to graduation, which is facilitated by the program's collaboration with industrial and academic partners.</p>
+    	</div>
+    	<div class="col-sm-4">
+    		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    			<ol class="carousel-indicators">
+    				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    				<li data-target="#myCarousel" data-slide-to="1"></li>
+    				<li data-target="#myCarousel" data-slide-to="2"></li>
+    			</ol>
+    			<div class="carousel-inner" role="listbox">
+    				<div class="item active">
+    					<img src="images/QCC.jpg" class="thumbnail" style="height: 100%">
+    				</div>
+    				<div class="item">
+    					<img src="images/QCC2.jpg" class="thumbnail" style="height: 100%">
+    				</div>
+    				<div class="item">
+    					<img src="images/QCC3.jpg" class="thumbnail" style="height: 100%">
+    				</div>
+    			</div>
+    			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    			</a>
+    			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    			</a>
+    		</div>
+        <a href="http://www.quinnipiac.edu/admissions/undergraduate-admissions/how-to-apply/apply-online/" class="btn btn-primary btn-lg" role="button" target="_blank">Apply Now</a>
+        <a href="http://www.quinnipiac.edu/admissions/undergraduate-admissions/contact-admissions/request-information/" class="btn btn-primary btn-lg" role="button" target="_blank">Request Info</a>
+    	</div>
+    </div> <!-- fluid container end -->
+    <div class="container-fluid"> <!-- expand tabs -->
+    	<div class ="col-sm-6">
+    	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> <!-- start tab group -->
+    		<div class="panel panel-default"> <!-- start first tab -->
+    			<div class="panel-heading" role="tab" id="headingOne">
+    				<h4 class="panel-title">
+    					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne"> Student Outcomes & Educational Objectives <span class="caret"></span></a>
+    				</h4>
+    			</div>
+    			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+    				<div class="panel-body">
+              <h4><b>Student Outcomes</b></h4>
+              <div class="tabContent">
+    					   <p>Upon completion of the software engineering program students will have attained:</p>
+                  <ul>
+                    <li>An ability to apply knowledge of mathematics, science and engineering </li>
+                    <li>An ability to design and conduct experiments, as well as to analyze and interpret data</li>
+                    <li>An ability to design a system, component or process to meet desired needs within realistic constraints such as economic, environmental, social, political, ethical, health and safety, manufacturability and sustainability</li>
+                    <li>An ability to function on multidisciplinary teams</li>
+                    <li>An ability to identify, formulate and solve engineering problems</li>
+                    <li>An understanding of professional and ethical responsibility</li>
+                    <li>An ability to communicate effectively</li>
+                    <li>The broad education necessary to understand the impact of engineering solutions in a global, economic, environmental and societal context</li>
+                    <li>A recognition of the need for and an ability to engage in life-long learning</li>
+                    <li>A knowledge of contemporary issues</li>
+                    <li>An ability to use the techniques, skills and modern engineering tools necessary for engineering practice</li>
+                  </ul>
+              </div>
+              <h4><b>Educational Objectives</b></h4>
+              <div class="tabContent">
+                <p>Within four to seven years of graduation, software engineering majors are expected to:</p>
+                  <ul>
+                    <li>Demonstrate core software engineering knowledge and skills</li>
+                    <li>Demonstrate ethical behavior in their pursuits</li>
+                    <li>Have achieved sustained employment and/or be pursuing additional educational opportunities</li>
+                    <li>Pursue lifelong learning by maintaining currency in their field as they develop as professionals</li>
+                    <li>Demonstrate professional and personal growth by seeking leadership and mentoring roles in their profession and community</li>
+                  </ul>
+              </div>
+    				</div>
+    			</div>
+    		</div> <!-- end first collapisble -->
+    		<div class="panel panel-default"> <!-- start second tab -->
+    			<div class="panel-heading" role="tab" id="headingTwo">
+    				<h4 class="panel-title">
+    					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Enrollment & Graduation Data <span class="caret"></span></a>
+    				</h4>
+    			</div>
+    			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+    				<div class="panel-body">
+    					<h4><b>Student Enrollment</b></h4>
+              <div class="tabContent">
+                <ul>
+                  <li>2015-16: 25</li>
+                  <li>2014-15: 23</li>
+                  <li>2013-14: 16</li>
+                  <li>2012-13: 4</li>
+                </ul>
+              </div>
+              <div id="chartContainer" style="height: 75vh; width: 100%;"></div>
+    				</div>
+    			</div>
+    		</div> <!-- end second collapisble -->
+    		<div class="panel panel-default"> <!-- start second tab -->
+    			<div class="panel-heading" role="tab" id="headingThree">
+    				<h4 class="panel-title">
+    					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Curriculum <span class="caret"></span></a>
+    				</h4>
+    			</div>
+    			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+    				<div class="panel-body">
+              <div class="tabContent">
+                <p>A bachelor of science in software engineering requires 120 credits as outlined in the 2015-2016 catalog below.</p>
+                <hr></hr>
+              </div>
+              <div class="tableContent">
+                <h5>University Curriculum (46 credits)</h5>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Course</th>
+                      <th>Title</th>
+                      <th>Credits</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><b>University Seminars</b></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>FYS101</td>
+                      <td>First-year Seminar</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>UC</td>
+                      <td>UC Capstone</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><b>English Composition</b></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>EN101</td>
+                      <td>Elements of Composition I</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>EN102</td>
+                      <td>Elements of Composition II</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><b>Fine Arts</b></td>
+                      <td></td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><b>Quantitative Literacy</b></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>MA285</td>
+                      <td>Applied Statistics</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><b>Scientific Literacy</b></td>
+                      <td></td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td><b>Social Science</b></td>
+                      <td></td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td><b>Humanities</b></td>
+                      <td></td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td><b>University Curriculum Electives</b></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>MA151</td>
+                      <td>Calculus I</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td><i>or</i> MA141</td>
+                      <td>Calculus of a Single Variable I</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>UC</td>
+                      <td>UC elective</td>
+                      <td>2-3</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h5>Computer Software Engineering Courses</h5>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Course</th>
+                      <th>Title</th>
+                      <th>Credits</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><b>Foundational Courses for Computer Software Engineering (28 credits)</b></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>CSC110</td>
+                      <td>Programming and Problem Solving</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>CSC111</td>
+                      <td>Data Structures and Abstraction</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>CSC215</td>
+                      <td>Algorithm Design and Analysis</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>CSC elective</td>
+                      <td>CSC 210 or any CSC 300-level course, waived with approved minor</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td><b>Two MA electives from the following:</b></td>
+                      <td></td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>MA 152, MA 229, MA 301, MA 305, MA 315, MA 318, MA 361 and MA 378 or any MA 200 level or higher approved course</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><b>One year of lab science from the following:</b></td>
+                      <td></td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>CHE110/CHE110L and CHE 111/CHE111L<br>
+                      <i>or</i> BIO101/BIO101L and BIO102/BIO102L<br>
+                      <i>or</i> BIO150/BIO150L and BIO151/BIO151L<br>
+                      <i>or</i> PHY121/PHY122L</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><b>Common Engineering Curriculum (7 credits)</b></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>ENR110</td>
+                      <td>The World of an Engineer</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>ENR210</td>
+                      <td>Engineering Economics and Project Management</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>ENR395</td>
+                      <td>Professional Development Seminar</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td><b>Software Engineering Courses (32 credits)</b></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>SER120</td>
+                      <td>Object-oriented Design & Programming</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>SER210</td>
+                      <td>Software Engineering Design & Development</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>SER225</td>
+                      <td>Introduction to Software Development</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>SER310</td>
+                      <td>Human Computer Interaction</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>SER330</td>
+                      <td>Software Quality Assurance and Testing</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>SER340</td>
+                      <td>Software Requirements Analysis</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>SER350</td>
+                      <td>Software Project Management</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>SER490</td>
+                      <td>Engineering Professional Experience</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>SER491</td>
+                      <td>Senior Capstone I</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>SER492</td>
+                      <td>Senior Capstone II</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>SER</td>
+                      <td>SER Electives (2)</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>Open electives (0-1 credits)</td>
+                      <td></td>
+                      <td>1</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+    				</div>
+    			</div>
+    		</div> <!-- end third collapisble -->
+    	</div> <!-- end panel group --> 
+    </div> <!-- end col -->
+    </div> <!-- end container -->
+</body>  
+</html>

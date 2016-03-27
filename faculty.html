@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang ="em"> 
+<head>
+	<meta charset"utf-8">
+	<title>Software Engineering</title>
+	<link rel="icon" type="image/png" href="images/QU.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		.navbar {
+			background-color: #00004C;
+			font-size: 12px !important;
+			margin-bottom: 0;
+		}
+
+		.navbar li a { 
+			color: white !important;
+		}
+
+		.navbar li a:hover { 
+			color: #E5C100 !important;
+		}
+
+		.activeLink {
+			color: #E5C100 !important;
+			text-decoration: underline;
+		}
+
+		.jumbotron { 
+			background-color: #404040;
+			color: white !important;
+		}
+
+		.panel {
+			text-align: center;
+			margin-bottom: 0;
+		}
+
+		.panel-default > .panel-heading {
+			background-color: #00004C;
+			color: #E5C100;
+		}
+
+		.info {
+			font-size: 12px;
+		}
+
+		.table-responsive {
+			text-align: left;
+		}
+
+		thead {
+			background-color: #f1f1f1;
+		}
+
+		@media screen and (max-width: 768px) {
+				.col-sm-4 {
+				text-align: center;
+				margin: 25px 0;
+				}
+			}
+	</style>
+</head> 
+<body>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" target="#myNavbar">
+				<span class="icon-bar"></span>
+	       		<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span> 
+	        	</button>
+	        </div>
+	    	<div class="collapse navbar-collapse" id="myNavbar">
+	        	<ul class ="nav navbar-nav navbar-right">
+	        		<li><a href="about.html">About</a></li>
+	        		<li><a href="faculty.html"><b class ="activeLink">Faculty</b></a></li>
+	        		<li><a href="projects.html">Projects</a></li>
+	        		<li><a href="studentLife.html">Student Life</a></li>
+	        		<li><a href="faq.html">FAQs</a></li>
+	        	</ul>
+	        </div>
+	    </div>
+	</nav>
+	<div id ="faculty" class="jumbotron text-center">
+	    <h1>Software Engineering</h1>
+	    <h3>Our Faculty</h3>
+	</div>
+	<!-- Container -->
+	<div class "container-fluid">
+		<!-- Prof. Ruby Panel -->
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title name">Ruby ElKharboutly</h3>
+				</div>
+				<div class="panel-body">
+					<img src="images/ProfRuby.jpg" width="130px" height="200px">
+					<p><i>Assistant Professor of Software Engineering</i></p>
+					<hr></hr>
+			   		<p class="info">Center for Comm.&Engineering LL317</p>
+			   		<p class="info"><a href="mailto:Ruby.ElKharboutly@quinnipiac.com">Ruby.ElKharboutly@quinnipiac.edu</a></p>
+			   		<p class="info">(203) 582-5027</p>
+			   		<p class="info">BS, MS, American University in Cairo; PhD, University of Connecticut</p>
+			   	</div>
+			   	<div class="panel panel-default">
+			   		<div class="panel-heading" role="tab" id="Courses">
+			   			<h4 class="panel-title">
+			   				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#rubyCourses" aria-expanded="false" aria-controls="rubyCourses">
+			   					View List of Courses <span class="caret"></span>
+			   				</a>
+			   			</h4>
+			   		</div>
+			   		<div id="rubyCourses" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingRuby">
+			   			<div class="panel-body">
+			   				<div class="table table-responsive">
+			   					<table class="table table-responsive">
+			   					   	<thead>
+			   					   		<tr>
+			   					   			<th>ID</th>
+			   					   			<th>Course Name</th>
+			   					   		</tr>
+			   					   	</thead>
+			   					   	<tbody>
+			   					   		<tr>
+			   					   			<td>CSC375</td>
+			   					   			<td>Advanced Topics in Computer Science</td>
+			   							</tr>
+			   					   		<tr>
+			   								<td>SER120</td>
+			   				   				<td>Object Oriented Design & Programming</td>
+			   				   			</tr>
+			   				   			<tr>
+			   								<td>SER210</td>
+			   				   				<td>Software Engineering Design & Development</td>
+			   				   			</tr>
+			   				   			<tr>
+			   								<td>SER300</td>
+			   				   				<td>Software Engineering in Healthcare</td>
+			   				   			</tr>
+			   				   		</tbody>
+			   				   	</table>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</div>
+			</div>
+		</div>
+		<!-- Prof. Christov Panel -->
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title name">Stefan Christov</h3>
+				</div>
+				<div class="panel-body">
+					<img src="images/ProfChristov.jpg" width="130px" height="200px">
+					<p><i>Assistant Professor of Software Engineering</i></p>
+			   		<hr></hr>
+			   		<p class="info">Center for Comm.&Engineering LL310</p>
+			   		<p class="info"><a href="mailto:Stefan.Christov@quinnipiac.com">Stefan.Christov@quinnipiac.edu</a></p>
+			   		<p class="info">(203) 582-7920</p>
+			   		<p class="info">BS, SUNY College Brockport; MS, PhD, University of Massachusetts-Amherst</p>
+			   		
+			   	</div>
+			   	<div class="panel panel-default">
+			   		<div class="panel-heading" role="tab" id="Courses">
+			   			<h4 class="panel-title">
+			   				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#christovCourses" aria-expanded="false" aria-controls="headingChristov">
+			   					View List of Courses <span class="caret"></span>
+			   				</a>
+			   			</h4>
+			   		</div>
+			   		<div id="christovCourses" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingChristov">
+			   			<div class="panel-body">
+			   				<div class="table table-responsive">
+			   					<table class="table table-responsive">
+			   					   	<thead>
+			   					   		<tr>
+			   					   			<th>ID</th>
+			   					   			<th>Course Name</th>
+			   					   		</tr>
+			   					   	</thead>
+			   					   	<tbody>
+			   					   		<tr>
+			   					   			<td>SER310</td>
+			   					   			<td>Software Engineering Approaches to Human Computer Interaction</td>
+			   							</tr>
+			   					   		<tr>
+			   								<td>SER330</td>
+			   				   				<td>Software Quality Assurance & Testing</td>
+			   				   			</tr>
+			   				   			<tr>
+			   								<td>SER492</td>
+			   				   				<td>Senior Capstone II</td>
+			   				   			</tr>
+			   				   		</tbody>
+			   				   	</table>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</div>
+			</div>
+		</div>
+		<!-- Prof. Blake Panel -->
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title name">Jonathan D. Blake</h3>
+				</div>
+				<div class="panel-body">
+					<img src="images/ProfBlake.jpg" width="130px" height="200px">
+					<p><i>Professor of Computer Science</i></p>
+					<hr></hr>
+			   		<p class="info">Center for Comm.&Engineering LL321</p>
+			   		<p class="info"><a href="mailto:Jonathan.Blake@quinnipiac.com">Jonathan.Blake@quinnipiac.edu</a></p>
+			   		<p class="info">(203)-582-8539</p>
+			   		<p class="info">BSE, Princeton University; MS, PhD, Northwestern University</p>
+			   	</div>
+			   	<div class="panel panel-default">
+			   		<div class="panel-heading" role="tab" id="Courses">
+			   			<h4 class="panel-title">
+			   				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#blakeCourses" aria-expanded="false" aria-controls="headingBlake">
+			   					View List of Courses <span class="caret"></span>
+			   				</a>
+			   			</h4>
+			   		</div>
+			   		<div id="blakeCourses" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingBlake">
+			   			<div class="panel-body">
+			   				<div class="table table-responsive">
+			   					<table class="table table-responsive">
+			   					   	<thead>
+			   					   		<tr>
+			   					   			<th>ID</th>
+			   					   			<th>Course Name</th>
+			   					   		</tr>
+			   					   	</thead>
+			   					   	<tbody>
+			   					   		<tr>
+			   					   			<td>CSC110</td>
+			   					   			<td>Programming & Problem Solving</td>
+			   							</tr>
+			   					   		<tr>
+			   								<td>CSC111</td>
+			   				   				<td>Data Structures & Abstraction</td>
+			   				   			</tr>
+			   				   		</tbody>
+			   				   	</table>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</div>
+			</div>
+		</div>
+	</div>
+	<!-- end div for container filled with panels -->
+</body>  
+</html>
