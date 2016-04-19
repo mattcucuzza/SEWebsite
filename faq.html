@@ -9,6 +9,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   	<style>
   		.navbar {
   			background-color: #00004C;
@@ -29,15 +30,65 @@
   			text-decoration: underline;
   		}
 
+      .logo {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0;
+      }
+
+      .navbar-right {
+        padding-top: 85px;
+      }
+
   		.jumbotron { 
   			background-color: #404040;
   			color: white !important;
   		}
 
   		.thumbnail {
-  			width: 100%;
-  			height: 100%;
+  			width: 550px;
+  			height: 550px;
   		}
+
+      .bottom {
+        border: 1px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #ececec;
+        text-align: center;
+      }
+
+      .footerList {
+        list-style: none;
+        padding-right: 40px;
+      }
+
+      .footerText {
+          margin-right: auto;
+          margin-left: auto;
+          color: black;
+          font-size: 13px;
+      }
+
+      .btn-circle {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        font-size: 20px;
+        line-height: 1.50;
+        border-radius: 20px;
+        background-color: #00004C;
+        color: #E5C100;
+        border: none;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .btn-circle:hover, .btn-circle:active, .btn-circle:focus {
+        background-color: #E5C100;
+        color: #00004C !important;
+        border: none;
+      }
 
   		@media screen and (max-width: 768px) {
 				.col-sm-4 {
@@ -58,8 +109,9 @@
         		</button>
         	</div>
         	<div class="collapse navbar-collapse" id="myNavbar">
+            <img src="images/logo.png" class="logo">
         		<ul class ="nav navbar-nav navbar-right">
-        			<li><a href="about.html">About</a></li>
+        			<li><a href="index.html">Home</a></li>
         			<li><a href="faculty.html">Faculty</a></li>
         			<li><a href="projects.html">Projects</a></li>
         			<li><a href="studentLife.html">Student Life</a></li>
@@ -76,20 +128,32 @@
     	<div class="row">
     		<div class="col-sm-6">
     			<h4><b>How was the transition from high school to freshman year?</b></h4>
-    			<p><i>The transition from high school to freshman year wasn't too bad. The key is to stay on top of your studies and get involved with as many clubs and organizations as possible.</i><p>
+    			<p>The transition from high school to freshman year wasn't too bad. The key is to stay on top of your studies and get involved with as many clubs and organizations as possible.<p>
     			<h4><b>Do you need coding experience coming into the program?</b></h4>
-    			<p><i>No you do not. CSC110, the introduction course to programming here at Quinnipiac, does a fantastic job at teaching you almost everything about reading and writing code. However, coming in with programming experience will only benefit you; especially if you know an object-oriented language.</i><p>
+    			<p>No you do not. CSC110, the introduction course to programming here at Quinnipiac, does a fantastic job at teaching you almost everything about reading and writing code. However, coming in with programming experience will only benefit you; especially if you know an object-oriented language.<p>
     			<h4><b>How helpful are the professors?</b></h4>
-    			<p><i>The professors are extremely helpful. They explain everything very well in class and are always there to answer any questions you have about the material taught or any homework. The professors offer office hours every week in case you need to get help outside of the classroom as well.</i><p>
+    			<p>The professors are extremely helpful. They explain everything very well in class and are always there to answer any questions you have about the material taught or any homework. The professors offer office hours every week in case you need to get help outside of the classroom as well.<p>
           <h4><b>What is the difference between computer science and software engineering?</b></h4>
-          <p><i>Computer scientists are primarily concerned with the design of algorithms, languages, hardware architecture, systems software, applications software and tools. Software engineers learn much more about creating high-quality software in a systematic, controlled, and efficient manner with regards to safety, reliability, cost and schedule of the development process.</i></p>
+          <p>Computer scientists are primarily concerned with the design of algorithms, languages, hardware architecture, systems software, applications software and tools. Software engineers learn much more about creating high-quality software in a systematic, controlled, and efficient manner with regards to safety, reliability, cost and schedule of the development process.</p>
           <h4><b>What are some of the job or internship opportunities Quinnipiac is networked to?</b></h4>
-          <p><i>We've had several students graduate through the A100 apprenticeship program in New Haven, CT which follow up with internships for web development. Students graduating have been accepted to pharmaceutical companies in the software development department.</i></p>
+          <p>We've had several students graduate through the A100 apprenticeship program in New Haven, CT which follow up with internships for web development. Students graduating have been accepted to pharmaceutical companies in the software development department.</p>
     		</div>
     		<div class="col-sm-5">
     			<img src="images/library.png" class="thumbnail">
     		</div>
     	</div>
+    </div>
+    <div class="bottom container-fluid">
+      <ul class="footerList">
+        <li class="footerText">Quinnipiac University</li>
+        <li class="footerText">275 Mount Carmel Avenue</li>
+        <li class="footerText">Hamden, CT 06518</li>
+        <li class="footerText">(203)-582-8200</li>
+        <li class="footerText"><i class="fa fa-copyright"></i> 2016 Quinnipiac University. All rights reserved.</li>
+      </ul>
+      <a href="http://www.facebook.com/QuinnipiacUniversity" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="http://www.twitter.com/QuinnipiacU" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="http://www.instagram.com/quinnipiacu" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-instagram"></i></a>
     </div>
 </body>  
 </html>

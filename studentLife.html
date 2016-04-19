@@ -9,6 +9,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<style>
 		.navbar {
   			background-color: #00004C;
@@ -29,6 +30,16 @@
   			text-decoration: underline;
   		}
 
+      .logo {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0;
+      }
+
+      .navbar-right {
+        padding-top: 85px;
+      }
+
   		.jumbotron { 
   			background-color: #404040;
   			color: white !important;
@@ -43,6 +54,46 @@
 
   		}
 
+      .bottom {
+        border: 1px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #ececec;
+        text-align: center;
+      }
+
+      .footerList {
+        list-style: none;
+        padding-right: 40px;
+      }
+
+      .footerText {
+          margin-right: auto;
+          margin-left: auto;
+          color: black;
+          font-size: 13px;
+      }
+
+      .btn-circle {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        font-size: 20px;
+        line-height: 1.50;
+        border-radius: 20px;
+        background-color: #00004C;
+        color: #E5C100;
+        border: none;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .btn-circle:hover, .btn-circle:active, .btn-circle:focus {
+        background-color: #E5C100;
+        color: #00004C !important;
+        border: none;
+      }
+
   		@media screen and (max-width: 768px) {
   			.col-sm-4 {
   			text-align: center;
@@ -50,6 +101,11 @@
   			}
   		}
   	</style>
+    <script>
+      function alert() {
+        alert("Link not available");
+      }
+    </script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-static-top">
@@ -62,8 +118,9 @@
         		</button>
         	</div>
         	<div class="collapse navbar-collapse" id="myNavbar">
+            <img src="images/logo.png" class="logo">
         		<ul class ="nav navbar-nav navbar-right">
-        			<li><a href="about.html">About</a></li>
+        			<li><a href="index.html">Home</a></li>
         			<li><a href="faculty.html">Faculty</a></li>
         			<li><a href="projects.html">Projects</a></li>
         			<li><a href="studentLife.html"><b class ="activeLink">Student Life</b></a></li>
@@ -102,10 +159,20 @@
 
     				<li><b><u>Quinnipiac University Engineering Student Organization (QUESO)</u></b></li>
     				<p>The purpose of this organization is to explore Quinnipiac University's students interest in the fields of Engineering, to increase the community's awareness of engineering, and to assist in the facilitation of networking between alumni, students, faculty and employers in the fields of Engineering.<br><a href="https://www.facebook.com/groups/QUengineering/"> Learn more about QUESO</a></p>
-    				<li><u><b>Quinnipiac Game Club</u></b></li>
-    				<p>The purpose of this organization shall be to play, experience, and design all different types of games. We would play all types of games including, but not limited to: video games, board games, card games, computer games, mobile games, sports, etc. We would also be a source of guidance for students enrolled in Game Design and Development courses.<br><a href="#"> Learn more about the Game Club</a></p>
     			</ul>
     		</div>
     	</div>
+    </div>
+    <div class="bottom container-fluid">
+      <ul class="footerList">
+        <li class="footerText">Quinnipiac University</li>
+        <li class="footerText">275 Mount Carmel Avenue</li>
+        <li class="footerText">Hamden, CT 06518</li>
+        <li class="footerText">(203)-582-8200</li>
+        <li class="footerText"><i class="fa fa-copyright"></i> 2016 Quinnipiac University. All rights reserved.</li>
+      </ul>
+      <a href="http://www.facebook.com/QuinnipiacUniversity" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="http://www.twitter.com/QuinnipiacU" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="http://www.instagram.com/quinnipiacu" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-instagram"></i></a>
     </div>
 </html>

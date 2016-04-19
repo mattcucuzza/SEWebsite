@@ -9,6 +9,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<style>
 		.navbar {
 			background-color: #00004C;
@@ -27,6 +28,16 @@
 		.activeLink {
 			color: #E5C100 !important;
 			text-decoration: underline;
+		}
+
+		.logo {
+		  padding-bottom: 10px;
+		  padding-top: 10px;
+		  margin: 0;
+		}
+
+		.navbar-right {
+		  padding-top: 85px;
 		}
 
 		.jumbotron { 
@@ -52,6 +63,50 @@
 			text-align: left;
 		}
 
+		.spaceContainer { 
+			padding-top: 100px;
+		}
+
+		.bottom {
+		  border: 1px solid black;
+		  padding-top: 10px;
+		  padding-bottom: 10px;
+		  background-color: #ececec;
+		  text-align: center;
+		}
+
+		.footerList {
+		  list-style: none;
+		  padding-right: 40px;
+		}
+
+		.footerText {
+		    margin-right: auto;
+		    margin-left: auto;
+		    color: black;
+		    font-size: 13px;
+		}
+
+		.btn-circle {
+		  width: 40px;
+		  height: 40px;
+		  padding: 5px;
+		  font-size: 20px;
+		  line-height: 1.50;
+		  border-radius: 20px;
+		  background-color: #00004C;
+		  color: #E5C100;
+		  border: none;
+		  margin-right: auto;
+		  margin-left: auto;
+		}
+
+		.btn-circle:hover, .btn-circle:active, .btn-circle:focus {
+		  background-color: #E5C100;
+		  color: #00004C !important;
+		  border: none;
+		}
+
 		thead {
 			background-color: #f1f1f1;
 		}
@@ -75,8 +130,9 @@
 	        	</button>
 	        </div>
 	    	<div class="collapse navbar-collapse" id="myNavbar">
+	    		<img src="images/logo.png" class="logo">
 	        	<ul class ="nav navbar-nav navbar-right">
-	        		<li><a href="about.html">About</a></li>
+	        		<li><a href="index.html">Home</a></li>
 	        		<li><a href="faculty.html"><b class ="activeLink">Faculty</b></a></li>
 	        		<li><a href="projects.html">Projects</a></li>
 	        		<li><a href="studentLife.html">Student Life</a></li>
@@ -256,5 +312,19 @@
 		</div>
 	</div>
 	<!-- end div for container filled with panels -->
+	<div class="spaceContainer container-fluid">
+	</div>
+	<div class="bottom container-fluid">
+	  <ul class="footerList">
+	    <li class="footerText">Quinnipiac University</li>
+	    <li class="footerText">275 Mount Carmel Avenue</li>
+	    <li class="footerText">Hamden, CT 06518</li>
+	    <li class="footerText">(203)-582-8200</li>
+	    <li class="footerText"><i class="fa fa-copyright"></i> 2016 Quinnipiac University. All rights reserved.</li>
+	  </ul>
+	  <a href="http://www.facebook.com/QuinnipiacUniversity" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-facebook"></i></a>
+	  <a href="http://www.twitter.com/QuinnipiacU" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-twitter"></i></a>
+	  <a href="http://www.instagram.com/quinnipiacu" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-instagram"></i></a>
+	</div>
 </body>  
 </html>

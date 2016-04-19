@@ -9,6 +9,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   	<style>
   		.navbar {
   			background-color: #00004C;
@@ -23,6 +24,16 @@
   		.navbar li a:hover { 
   			color: #E5C100 !important;
   		}
+
+      .logo {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin: 0;
+      }
+
+      .navbar-right {
+        padding-top: 85px;
+      }
 
   		.activeLink {
   			color: #E5C100 !important;
@@ -62,22 +73,69 @@
         color: #00004C !important;
       }
 
-		.panel-default > .panel-heading {
-			background-color: #00004C;
-			color: #E5C100;
-		}
+		  .panel-default > .panel-heading {
+			 background-color: #00004C;
+			 color: #E5C100;
+       text-align: center;
+		  }
 
-    .tabContent {
-      font-size: 12px;
-    }
+      .tabContent {
+        font-size: 12px;
+      }
 
-    .tableContent {
-      font-size: 10px;
-    }
+      .tabContent.center {
+        text-align: center;
+      }
 
-    table {
-      border: 1px solid #909090;
-    }
+      .currKey {
+        margin-top: -20px;
+      }
+
+      .tableContent {
+        font-size: 12px;
+      }
+
+      .bottom {
+        border: 1px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #ececec;
+        text-align: center;
+      }
+
+      .footerList {
+        list-style: none;
+        padding-right: 40px;
+      }
+
+      .footerText {
+          margin-right: auto;
+          margin-left: auto;
+          color: black;
+          font-size: 13px;
+      }
+
+      .btn-circle {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        font-size: 20px;
+        line-height: 1.50;
+        border-radius: 20px;
+        border: none;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .btn-circle:hover, .btn-circle:active, .btn-circle:focus {
+        background-color: #E5C100;
+        color: #00004C !important;
+        border: none;
+      }
+
+      table {
+        border: 1px solid #909090;
+      }
 
   		@media screen and (max-width: 768px) {
 				.col-sm-4 {
@@ -110,10 +168,10 @@
             type: "column",
             color: "#E5C100",
             dataPoints: [
-              {label: "2012-13",  y: 4},
-              {label: "2013-14",  y: 16},
-              {label: "2014-15",  y: 23},
               {label: "2015-16", y: 25},
+              {label: "2014-15",  y: 23},
+              {label: "2013-14",  y: 16},
+              {label: "2012-13",  y: 4},
             ]
           }]
         });
@@ -132,8 +190,9 @@
         		</button>
         	</div>
         	<div class="collapse navbar-collapse" id="myNavbar">
+            <img src="images/logo.png" class="logo">
         		<ul class ="nav navbar-nav navbar-right">
-        			<li><a href="about.html"><b class ="activeLink">About</b></span></a></li>
+        			<li><a href="index.html"><b class ="activeLink">Home</b></span></a></li>
         			<li><a href="faculty.html">Faculty</a></li>
         			<li><a href="projects.html">Projects</a></li>
         			<li><a href="studentLife.html">Student Life</a></li>
@@ -152,7 +211,7 @@
     		<p>Software engineers apply principles and techniques from computer science, engineering and mathematical analysis to specify, design, implement, evaluate, and maintain software systems. The bachelor of science in software engineering prepares students for a wide range of careers in the computing fields, as well as related positions in other domains, such as healthcare, finance, and communications.</p>
     		<p>Programming skills are only one of the many components of a successful graduate of the Quinnipiac software engineering program. Students also acquire requirement specification, design, quality assurance and project management skills. Problem solving in teams through effective use of oral and written communication is also emphasized in the program. Students specify, design, and implement non-trivial software systems and complete a two-semester capstone project. Each student is required to obtain professional experience (e.g., through an internship or a research project) prior to graduation, which is facilitated by the program's collaboration with industrial and academic partners.</p>
     	</div>
-    	<div class="col-sm-4">
+    	<div class="col-sm-4 col-sm-offset-2">
     		<div id="myCarousel" class="carousel slide" data-ride="carousel">
     			<ol class="carousel-indicators">
     				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -182,7 +241,7 @@
     	</div>
     </div> <!-- fluid container end -->
     <div class="container-fluid"> <!-- expand tabs -->
-    	<div class ="col-sm-6">
+    	<div class ="col-sm-8 col-sm-offset-2">
     	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> <!-- start tab group -->
     		<div class="panel panel-default"> <!-- start first tab -->
     			<div class="panel-heading" role="tab" id="headingOne">
@@ -255,8 +314,52 @@
               <div class="tabContent">
                 <p>A bachelor of science in software engineering requires 120 credits as outlined in the 2015-2016 catalog below.</p>
                 <hr></hr>
+                <div class="currKey col-sm-12">
+                <h5>Curriculum Key:</h5>
+                <table class ="table table-striped">
+                  <thead>
+                    <th>Course</th>
+                    <th>ID</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Math</td>
+                      <td>MA</td>
+                    </tr>
+                    <tr>
+                      <td>English</td>
+                      <td>EN</td>
+                    </tr>
+                    <tr>
+                      <td>Computer Science</td>
+                      <td>CSC</td>
+                    </tr>
+                    <tr>
+                      <td>Chemistry</td>
+                      <td>CHE</td>
+                    </tr>
+                    <tr>
+                      <td>Biology</td>
+                      <td>BIO</td>
+                    </tr>
+                    <tr>
+                      <td>Physics</td>
+                      <td>PHY</td>
+                    </tr>
+                    <tr>
+                      <td>Engineering</td>
+                      <td>ENR</td>
+                    </tr>
+                    <tr>
+                      <td>Software Engineering</td>
+                      <td>SER</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
               </div>
-              <div class="tableContent">
+              <div class="col-sm-12 tableContent">
+              <hr></hr>
                 <h5>University Curriculum (46 credits)</h5>
                 <table class="table table-striped">
                   <thead>
@@ -501,5 +604,17 @@
     	</div> <!-- end panel group --> 
     </div> <!-- end col -->
     </div> <!-- end container -->
+    <div class="bottom container-fluid">
+      <ul class="footerList">
+        <li class="footerText">Quinnipiac University</li>
+        <li class="footerText">275 Mount Carmel Avenue</li>
+        <li class="footerText">Hamden, CT 06518</li>
+        <li class="footerText">(203)-582-8200</li>
+        <li class="footerText"><i class="fa fa-copyright"></i> 2016 Quinnipiac University. All rights reserved.</li>
+      </ul>
+      <a href="http://www.facebook.com/QuinnipiacUniversity" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="http://www.twitter.com/QuinnipiacU" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="http://www.instagram.com/quinnipiacu" class="btn btn-default btn-circle" target="_blank"><i class="fa fa-instagram"></i></a>
+    </div>
 </body>  
 </html>
