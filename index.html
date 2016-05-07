@@ -19,10 +19,12 @@
 
   		.navbar li a { 
   			color: white !important;
+        font-size: 18px;
   		}
 
   		.navbar li a:hover { 
   			color: #E5C100 !important;
+        font-size: 18px;
   		}
 
       .logo {
@@ -38,6 +40,7 @@
   		.activeLink {
   			color: #E5C100 !important;
   			text-decoration: underline;
+        font-size: 18px;
   		}
 
   		.jumbotron { 
@@ -93,6 +96,16 @@
 
       .tableContent {
         font-size: 12px;
+      }
+
+      .courseMap {
+        border-color: black; 
+        border-width: 1px;
+        border-style: solid; 
+        width: 69%;
+        height: 57%;
+               width: 690px;
+        height: 575px;
       }
 
       .bottom {
@@ -601,6 +614,22 @@
     				</div>
     			</div>
     		</div> <!-- end third collapisble -->
+        <div class="panel panel-default"> <!-- start fourth tab -->
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> Course Map <span class="caret"></span></a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              <h4><b>Course Map</b></h4>
+              <div class="tabContent">
+                <p> Located below is a course map. A course map is a visual representation of the courses a student in the software engineering program must take in order to get their degree.</p>
+                <img src="images/courseMap.png" class="courseMap">
+              </div>
+            </div> <!-- end panel body-->
+          </div> <!--end fourth collapisble-->
+        </div>
     	</div> <!-- end panel group --> 
     </div> <!-- end col -->
     </div> <!-- end container -->
